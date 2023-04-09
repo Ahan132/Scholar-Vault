@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      body {
+        background-image: radial-gradient(
+            #385f71 1.9500000000000002px,
+            transparent 1.9500000000000002px
+          ),
+          radial-gradient(
+            #385f71 1.9500000000000002px,
+            #ffffff 1.9500000000000002px
+          );
+        background-size: 78px 78px;
+        background-position: 0 0, 39px 39px;
+      }
+      .conatiner {
+        background-color: #2b4162;
+        padding: 40px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 75px;
+        border-radius: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 30px;
+        color: #ffffff;
+      }
+      label {
+        font-size: 1.5em;
+        margin-top: 30px;
+        color: #ffffff;
+      }
+      input[type="password"],
+      input[type="email"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        margin-top: 7px;
+        font-size: 15px;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      button[type="submit"] {
+        background-color: #508299;
+        color: #fdf2ff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+        font-family: "Edu NSW ACT Foundation", cursive;
+        transition: all 0.4s ease-in-out;
+        margin-top: 30px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #456cb5;
+        font-family: "Edu NSW ACT Foundation", cursive;
+      }
+      #class {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Home > Log in</p>
+    <div class="conatiner">
+      <h1>Log in</h1>
+      <form id="signup-form" action="#" method="post">
+        <label for="text">E-mail :</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter UserName"
+          required
+        />
+
+        <label for="email">Password :</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit" value = "submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/* color palettes
+  #F5F0F6 white
+  #385F71 grey
+  #2B4162 blue
+  */
+
+/* CSS Code starts */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-image: radial-gradient(#385f71 1.9500000000000002px,
+            transparent 1.9500000000000002px),
+        radial-gradient(#385f71 1.9500000000000002px,
+            #ffffff 1.9500000000000002px);
+    background-size: 78px 78px;
+    background-position: 0 0, 39px 39px;
+}
+
+.title {
+    background-color: #2B4162;
+    height: 10vh;
+   color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subjects {
+    background-color: #385F71;
+    /* margin-top: 1vh;
+    height: 77vh; */
+    width: 15%;
+    text-align: center;
+    /* margin-left: -10px;
+    margin-bottom: -10px; */
+}
+
+#add {
+    width: 20%;
+    height: 60px;
+    background-color: #385F71;
+    font-size: 12px;
+    color: white;
+    margin-left:50%;
+
+}
+
+button {
+    background-color: #385F71;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    margin-top: 2%;
+    border: none;
+    color: white;
+
+}
+
+
+.addbar {
+    position: absolute;
+    margin-top: 35vw;
+    width: 80%;
+    margin-left: 40%;
+    height: 60px;
+
+}
+
+
+.form-popup {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 24%;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    z-index: 9;
+    width: 50%;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+.form-container .btn {
+    background-color: #385F71;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    height: 1vw;
+}
+
+
+
+#r1 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 2%;
+    height: 34%;
+    width: 20%;
+    margin-left: 28%;
+}
+
+#r2 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 2%;
+    height: 34%;
+    width: 20%;
+    margin-left: 50%;
+}
+
+#r3 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 2%;
+    height: 34%;
+    width: 20%;
+    margin-left: 72%;
+}
+
+
+#r4 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 24%;
+    height: 34%;
+    width: 20%;
+    margin-left: 28%;
+}
+
+#r5 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 24%;
+    height: 34%;
+    width: 20%;
+    margin-left: 50%;
+}
+
+#r6 {
+    position: absolute;
+    background-color: #2B4162;
+    border-radius: 15px;
+    margin-top: 24%;
+    height: 34%;
+    width: 20%;
+    margin-left: 72%;
+}
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 70%;
+  float: right;
+}
+
+.resource {
+  width: calc(33.33% - 20px);
+  height: 150px;
+  background-color: #2B4162;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.resource h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .resource .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .resource .upvotes {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 10px;
+  }
+  
+  .resource .subject {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 10px;
+  }
+  
+  .resource .description {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 10px;
+  }
+  
+  .resource .link {
+    font-size: 16px;
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .resource .link:hover {
+    color: #004499;
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      /* color palettes
+        #F5F0F6 white
+        #385F71 grey
+        #2B4162 blue
+        */
+pip insta
+    /* CSS Code starts */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: radial-gradient(
+            #385f71 1.9500000000000002px,
+            transparent 1.9500000000000002px
+          ),
+          radial-gradient(
+            #385f71 1.9500000000000002px,
+            #ffffff 1.9500000000000002px
+          );
+        background-size: 78px 78px;
+        background-position: 0 0, 39px 39px;
+      }
+      a{
+        color:white;
+        text-decoration: none;
+      }
+        button {
+        padding: 20px 30px;
+        font-size: 1.3em;
+        border: solid #5a8294;
+        border-radius: 6px;
+        background-color: #385f71;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      button:hover {
+        background-color: #234252;
+      }
+      .btn1 {
+        display: flex;
+        justify-content: right;
+        margin: 10px;
+      }
+      .btn1 button {
+        padding: 16px 40px;
+      }
+      .btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        flex-wrap: wrap;
+      }
+      .btns button {
+        margin: 15px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #ffffff;
+      }
+      .container {
+        margin: 100px auto;
+        border: solid;
+        max-width: 1000px;
+        padding: 45px;
+        border: none;
+        border-radius: 20px;
+        background-color: #2b4162;
+      }
+    /* CSS Code ends */
+    </style>
+  </head>
+  <body>
+    <div class="btn1">
+      <button><a href="login">Log in</a></button>
+    </div>
+    <div class="container">
+      <h1>Welcome to Resource library School name</h1>
+      <div class="btns">
+        <button><a href = "create_account">Student sign up</a></button>
+        <button><a href = "create_account">Teacher sign up</a></button>
+      </div>
+    </div>
+  </body>
+</html>
